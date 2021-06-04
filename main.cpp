@@ -25,7 +25,7 @@ int main() // This is 'main'. This is where program starts.
 
 	while (true)
 	{
-		const int LevelDifficulty{ []() -> const int {static int Dificulity{ 0 }; Dificulity += 1; return Dificulity; }() };
+		const int LevelDifficulty{ []() -> const int {static int Difficulty{ 0 }; Difficulty += 1; return Difficulty; }() };
 
 		const auto [MagicSum, MagicProduct] { CreateNumbers(LevelDifficulty) };
 
